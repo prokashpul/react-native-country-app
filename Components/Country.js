@@ -1,11 +1,12 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import React from "react";
 
 export default function Country({ count }) {
-  const { name } = count || {};
+  const { name, flags } = count || {};
   return (
-    <View>
-      <Text>{name.common}</Text>
+    <View style={{}}>
+      <Text style={{ fontSize: 20 }}>{name.common}</Text>
+      <Image source={{ uri: flags.png }} style={{ width: 300, height: 200 }} />
     </View>
   );
 }

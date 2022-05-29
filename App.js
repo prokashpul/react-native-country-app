@@ -5,9 +5,6 @@ import Countries from "./Components/Countries";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{ color: "red", fontSize: 18 }}>
-        Wow My First React Apps
-      </Text>
       <Countries></Countries>
       <StatusBar style="auto" />
     </View>
